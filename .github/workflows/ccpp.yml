@@ -11,6 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: init
       run: |
+        echo $(nproc)
         sudo -E apt-get -y install  curl
         ifconfig
         ip addr

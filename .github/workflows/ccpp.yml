@@ -14,6 +14,7 @@ jobs:
         sudo -E apt-get -y install  curl
         ifconfig
         ip addr
+        curl ipinfo.io
         curl ky.eesing.com
     - name: configure
       run: ./configure
